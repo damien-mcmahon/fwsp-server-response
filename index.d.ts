@@ -34,6 +34,9 @@ declare class ServerResponse {
 
   constructor();
 
+  // allow calling ServerResponse['createResponseObject'];
+  [key: string]: Function;
+
   setTestMode(): void;
   enableCORS(state: boolean): void;
   createResponseObject(httpCode: HttpCode, resultPayload: any): Response; 
