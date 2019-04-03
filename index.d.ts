@@ -37,7 +37,7 @@ declare class ServerResponse {
   setTestMode(): void;
   enableCORS(state: boolean): void;
   createResponseObject(httpCode: HttpCode, resultPayload: any): Response; 
-  sendResponse(code: HttpCode, res: NodeServerResponse, data: any): NodeServerResponse | void;
+  sendResponse(code: HttpCode, res: NodeServerResponse, data?: any): NodeServerResponse | void;
 
   sendOk(res: NodeServerResponse, data?: any): NodeServerResponse | void;
   sendCreated(res: NodeServerResponse, data?: any): NodeServerResponse | void;
