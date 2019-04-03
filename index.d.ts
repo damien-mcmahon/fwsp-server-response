@@ -40,23 +40,23 @@ declare class ServerResponse {
   createResponseObject(httpCode: HttpCode, resultPayload: any): Response; 
   sendResponse(code: HttpCode, res: NodeServerResponse, data: any): NodeServerResponse | void;
 
-  sendOk(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendCreated(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendMovedPermanently(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendInvalidRequest(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendInvalidUserCredentials(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendPaymentRequired(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendNotFound(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendInvalidSession(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendRequestFailed(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendDataConflict(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendTooLarge(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendTooManyRequests(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendServerError(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendInternalError(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendMethodNotImplemented(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendUnavailableError(res: NodeServerResponse, data: any): NodeServerResponse | void;
-  sendUnavailableError(res: NodeServerResponse, data: any): NodeServerResponse | void;
+  sendOk(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendCreated(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendMovedPermanently(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendInvalidRequest(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendInvalidUserCredentials(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendPaymentRequired(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendNotFound(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendInvalidSession(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendRequestFailed(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendDataConflict(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendTooLarge(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendTooManyRequests(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendServerError(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendInternalError(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendMethodNotImplemented(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendUnavailableError(res: NodeServerResponse, data?: any): NodeServerResponse | void;
+  sendUnavailableError(res: NodeServerResponse, data?: any): NodeServerResponse | void;
 }
 
 export default ServerResponse;
