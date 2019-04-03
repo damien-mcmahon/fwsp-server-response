@@ -34,9 +34,8 @@ declare class ServerResponse {
 
   constructor();
 
-  setTestMode();
-
-  enableCORS(state: boolean);
+  setTestMode(): void;
+  enableCORS(state: boolean): void;
   createResponseObject(httpCode: HttpCode, resultPayload: any): Response; 
   sendResponse(code: HttpCode, res: NodeServerResponse, data: any): NodeServerResponse | void;
 
